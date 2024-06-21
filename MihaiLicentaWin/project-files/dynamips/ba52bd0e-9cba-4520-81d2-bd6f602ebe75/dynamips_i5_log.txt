@@ -1,0 +1,46 @@
+Jun 21 22:18:51.150 HYPERVISOR: Release 0.2.17-x86/Windows (tag 2017072410)
+Jun 21 22:18:51.151 HYPERVISOR: Started on IP = localhost, TCP port = 61579.
+Jun 21 22:18:51.654 HYPERVISOR: exec_cmd: hypervisor version 
+Jun 21 22:18:51.654 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\givea\GNS3\projects\MihaiLicentaWin\project-files\dynamips 
+Jun 21 22:18:51.655 GENERAL: working_dir=C:\Users\givea\GNS3\projects\MihaiLicentaWin\project-files\dynamips
+Jun 21 22:18:51.655 HYPERVISOR: exec_cmd: hypervisor working_dir C:\Users\givea\GNS3\projects\MihaiLicentaWin\project-files\dynamips\8aeedab5-cfa7-46da-8bf4-cd7d21cffa92 
+Jun 21 22:18:51.656 GENERAL: working_dir=C:\Users\givea\GNS3\projects\MihaiLicentaWin\project-files\dynamips\8aeedab5-cfa7-46da-8bf4-cd7d21cffa92
+Jun 21 22:18:51.657 HYPERVISOR: exec_cmd: vm create R6 6 c7200 
+Jun 21 22:18:51.657 VM: VM R6 created.
+Jun 21 22:18:51.658 HYPERVISOR: exec_cmd: vm set_con_tcp_port R6 5004 
+Jun 21 22:18:51.658 HYPERVISOR: exec_cmd: c7200 get_mac_addr R6 
+Jun 21 22:18:51.658 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 21 22:18:51.659 HYPERVISOR: exec_cmd: vm slot_add_binding R6 0 0 C7200-IO-FE 
+Jun 21 22:18:51.659 HYPERVISOR: exec_cmd: vm set_disk0 R6 0 
+Jun 21 22:18:51.659 HYPERVISOR: exec_cmd: vm set_exec_area R6 64 
+Jun 21 22:18:51.660 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 21 22:18:51.660 HYPERVISOR: exec_cmd: vm set_idle_pc R6 0x606df838 
+Jun 21 22:18:51.660 HYPERVISOR: exec_cmd: vm set_ios R6 C:/Users/givea/GNS3/images/IOS/c7200-adventerprisek9-mz.124-24.T5.image 
+Jun 21 22:18:51.660 HYPERVISOR: exec_cmd: c7200 set_mac_addr R6 ca06.3480.0000 
+Jun 21 22:18:51.661 HYPERVISOR: exec_cmd: vm set_nvram R6 512 
+Jun 21 22:18:51.661 HYPERVISOR: exec_cmd: vm set_ram R6 512 
+Jun 21 22:18:51.661 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 21 22:18:51.661 HYPERVISOR: exec_cmd: vm slot_add_binding R6 1 0 PA-FE-TX 
+Jun 21 22:18:54.785 HYPERVISOR: exec_cmd: nio create_udp udp-1a6a2439-959a-440b-987a-c58d320eb3c7 10046 127.0.0.1 10047 
+Jun 21 22:18:55.091 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 0 0 udp-1a6a2439-959a-440b-987a-c58d320eb3c7 
+Jun 21 22:18:55.092 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 21 22:18:55.129 HYPERVISOR: exec_cmd: nio create_udp udp-b6932387-8f15-44ad-a967-5ef756ab6cef 10050 127.0.0.1 10051 
+Jun 21 22:18:55.131 HYPERVISOR: exec_cmd: vm slot_add_nio_binding R6 1 0 udp-b6932387-8f15-44ad-a967-5ef756ab6cef 
+Jun 21 22:18:55.132 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 21 22:19:02.957 HYPERVISOR: exec_cmd: vm set_ghost_status R6 2 
+Jun 21 22:19:02.967 HYPERVISOR: exec_cmd: vm set_ghost_file R6 C:\Users\givea\GNS3\projects\MihaiLicentaWin\project-files\dynamips\c7200-adventerprisek9-mz.124-24.T5.image-512.ghost 
+Jun 21 22:19:02.969 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 21 22:19:02.979 HYPERVISOR: exec_cmd: vm set_config R6 configs\i6_startup-config.cfg 
+Jun 21 22:19:02.980 HYPERVISOR: exec_cmd: vm start R6 
+Jun 21 22:19:33.334 HYPERVISOR: exec_cmd: vm extract_config R6 
+Jun 21 23:32:05.351 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 21 23:32:05.352 HYPERVISOR: exec_cmd: vm stop R6 
+Jun 21 23:32:05.497 VM: VM R6 shutdown.
+Jun 21 23:32:05.498 HYPERVISOR: exec_cmd: vm extract_config R6 
+Jun 21 23:32:06.252 HYPERVISOR: exec_cmd: vm get_status R6 
+Jun 21 23:32:06.252 HYPERVISOR: exec_cmd: vm extract_config R6 
+Jun 21 23:32:06.254 HYPERVISOR: exec_cmd: vm delete R6 
+Jun 21 23:32:06.254 VM: VM R6 destroyed.
+Jun 21 23:32:06.255 HYPERVISOR: exec_cmd: hypervisor stop 
+Jun 21 23:32:06.321 HYPERVISOR: Stopped.
+Jun 21 23:32:06.321 GENERAL: reset done.
